@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="CodeWave bootcamp landing page and login interface practice."><title>CodeWave | Bootcamp UI</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <nav class="navbar"><a class="logo" href="#home">CodeWave<span>.</span></a><a class="nav-link" href="#login">Member login</a></nav>
+  <main id="home" class="layout">
+    <section class="intro"><p class="tag">LEARN BY BUILDING</p><h1>Turn your curiosity into <span>real skills.</span></h1><p>Explore practical web development learning paths, build projects, and grow your confidence one step at a time.</p><a class="join" href="#login">Get started</a></section>
+    <section class="login" id="login"><h2>Welcome back</h2><p>Sign in interface concept</p><form id="login-form"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required><label for="password">Password</label><input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required><button type="submit">Preview login</button><p id="status" class="status" aria-live="polite"></p></form><small>This is a UI demo; no authentication or account creation is implemented.</small></section>
+  </main>
+  <script>document.getElementById('login-form').addEventListener('submit',function(event){event.preventDefault();document.getElementById('status').textContent='Demo only — no sign-in request was sent.';});</script>
+</body></html>
